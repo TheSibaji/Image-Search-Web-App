@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background-color: rgb(136, 182, 103); */
+    background-color: rgb(228, 228, 253);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px 10rem;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+    margin: 40px;
+    font-size: 8vh;
+}
+
+
+
+#searchInput {
+    width: 35%;
+    padding: 10px 20px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid rgba(111, 111, 111, 0.377);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: #21f6cfeb;
+    cursor: pointer;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 1200px;
+    margin: 3rem auto;
+}
+
+.image {
+    background-color: #fff;
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+
+.image img:hover {
+    opacity: .8;
+}
+
+.image a {
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+#show-more-btn {
+    /* background-color: #fff; */
+    padding: 8px 10px;
+    display: none;
+    
+}
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        margin: 20px;
+        background-color: olive;
+    }
+    
+    h1 {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin: 0 0;
+    }
+
+    #searchInput {
+        width: 50%;
+    }
+
+    #imageContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem auto;
+
+    }
+
+    .image {
+        max-width: 30%;
+        height: 100%;
+    
+    }
+    
+    .image img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px 10px;
+    }
+}
